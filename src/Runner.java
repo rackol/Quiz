@@ -8,7 +8,7 @@ public class Runner{
                 "(c)The Music Man\n(d)Hello Dolly\n";
         String q5="In 1952 Albert Einstein was offerd the presidency of which country?\n"+"(a)Isreal\n(b)Turkey\n(c)France\n(d)Brazil\n";
         String q6="What movie does this quote come from? 'You keep using that word. I do not think it means what you think it means.'\n"+
-                "(a)The Breakfast Club\n(b)The Princess Bride\n(c)Top Gun(d)\nThe God Father\n";
+                "(a)The Breakfast Club\n(b)The Princess Bride\n(c)Top Gun\n(d)The God Father\n";
         String q7="What is the seventh planet from the sun?\n"+"(a)Earth\n(b)Venus\n(c)Uranus\n(d)Pluto\n";
         String q8="Which Actress has won the most Oscars?\n"+"(a)Katharine Hepburn\n(b)Natalie Portman\n(c)Meryl Streep\n(d)Audrey Hepburn\n";
         String q9="What color jersey is worn by the winners of each stage fo the Tour De France?\n"+"(a)Orange\n(b)Red polkadots\n(c)Blue\n(d)Yellow\n";
@@ -40,5 +40,12 @@ public class Runner{
             }
         }
         System.out.println("You got "+score+"/"+questions.length);
+        if(score<=1){
+            System.out.println("Congrats! You are worse than Sammi");
+        }if(score>=9){
+            System.out.println("You definitely cheated!");
+        }else{
+            System.out.println("Congrats, You finished!");
+        }
     }
 }
