@@ -42,7 +42,7 @@ public class Runner{
         System.out.println("You got "+score+"/"+questions.length);
         if(score<=1){
             System.out.println("Congrats! You are worse than Sammi");
-        }if(score>=9){
+        }else if(score>=9){
             System.out.println("You definitely cheated!");
         }else{
             System.out.println("Congrats, You finished!");
